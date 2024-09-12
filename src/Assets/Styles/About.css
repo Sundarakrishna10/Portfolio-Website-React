@@ -1,0 +1,62 @@
+.about-info {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  /* Align content to the left */
+  flex-direction: column;
+  padding-block: 30px 70px;
+  padding-inline: 20px;
+  width: 100%;
+  background: var(--color-white);
+  box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+  border-radius: 20px;
+}
+
+.about-info p {
+  text-align: left;
+  /* Align text to the left */
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 20px;
+  /* Add space below the paragraph */
+}
+
+.about-btn {
+  align-self: flex-start;
+  /* Align button to the left */
+}
+
+.about-btn button {
+  background: var(--first-color);
+  color: var(--color-white);
+  border-radius: 30px;
+  padding: 10px 20px;
+  /* Add padding to the button */
+}
+
+.about-btn button:hover {
+  background: var(--first-color-hover);
+}
+
+/* ----- ABOUT / SKILLS BOX ----- */
+.skills-box {
+  margin: 10px;
+}
+
+.skills-header {
+  margin-bottom: 30px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skills-list span {
+  font-size: 14px;
+  background: var(--first-color);
+  color: var(--color-white);
+  padding: 2px 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,139 @@
+.project-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 250px;
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.project-box>i {
+  font-size: 50px;
+  color: #00b5e7;
+  margin-bottom: 25px;
+}
+
+.project-box label {
+  font-size: 15px;
+  color: #777;
+}
+
+.project-box::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  background: var(--second-color);
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.project-box:hover::after {
+  bottom: 0;
+}
+
+.project-box:hover i,
+.project-box:hover h3,
+.project-box:hover label {
+  color: var(--color-white);
+  z-index: 2;
+}
+
+.project-box h3,
+.project-box label {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.project-box:hover h3,
+.project-box:hover label {
+  color: white;
+}
+
+/* Button styles */
+.view-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-white);
+  color: var(--second-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 3;
+  /* Ensure the button appears above the pseudo-element */
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.project-box:hover .view-btn {
+  opacity: 1;
+}
+
+.project-box:hover .view-btn:hover {
+  background-color: var(--second-color);
+  color: var(--color-white);
+}
+
+/* More Projects button styles */
+.more-projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.more-projects .btn {
+  background-color: var(--second-color);
+  color: var(--color-white);
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more-projects .btn:hover {
+  background-color: var(--color-white);
+  color: var(--second-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 1024px) {
+  .project-container {
+    justify-content: center;
+  }
+
+  .project-box {
+    width: 80%;
+  }
+
+  .more-projects .btn {
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .project-box {
+    width: 100%;
+  }
+
+  .more-projects .btn {
+    padding: 8px 18px;
+  }
+}
