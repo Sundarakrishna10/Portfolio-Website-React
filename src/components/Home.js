@@ -86,7 +86,7 @@ const Home = () => {
             <i className="uil uil-instagram"></i>
           </div> */}
           <div className="icon">
-            <a href="www.linkedin.com/in/krishnakumarsundararaj" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+            <a href="https://www.linkedin.com/in/krishnakumar-sundararaj-78a263196/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
               <i className="uil uil-linkedin-alt"></i>
             </a>
           </div>
