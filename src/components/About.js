@@ -45,10 +45,11 @@ const About = () => {
               <h3>Frontend</h3>
             </div>
             <div className="skills-list">
-              <span>HTML</span>
-              <span>CSS</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
               <span>Bootstrap</span>
               <span>Tailwind CSS</span>
+              <span>React Material UI</span>
               <span>JavaScript</span>
               <span>React</span>
             </div>
